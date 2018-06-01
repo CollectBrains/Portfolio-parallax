@@ -6,6 +6,7 @@
 @import "_mixins/mixins"
 @import "smart-grid"
 
+
 *
 	-webkit-box-sizing: border-box
 	-moz-box-sizing: border-box
@@ -46,7 +47,7 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.65
-	font-family: $default-font
+	+jura
 	overflow-x: hidden
 	opacity: 1
 
@@ -202,6 +203,9 @@ body
 	color: #fff
 	text-transform: uppercase
 
+.btn-wrap
+	display: block
+	width: 100%
 
 
 ///*
@@ -304,6 +308,6 @@ body
 
 
 
-
+@import "button.scss"
 @import "slide.scss"
 @import "media" // Всегда в конце
