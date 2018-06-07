@@ -1,6 +1,10 @@
 $(function() {
 
-
+	$(".hover").mouseleave(
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
 
 	svg4everybody();
 

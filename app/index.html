@@ -25,7 +25,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
 	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
-
+	<link rel="stylesheet" href="sass/slide.scss">
 </head>
 
 <body>
@@ -147,7 +147,58 @@ top: 0px;'>
 		</div>
 		</div> -->
 
-		<div id="more1">
+		<div id="more2">
+			<div class='popularResolution para-totalCenterAlign'>
+
+			<div class='fastLayer' style='left: 534px;top: 100px;'>
+				<div alt='2'>
+					<div style='width:400px;height:300px;'>
+
+					</div>
+				</div>
+			</div>
+
+			<div class='fastLayer' style='left: 734px;top: 400px;'>
+				<div alt='2'>
+					<div style='width:400px;height:300px;'>
+
+					</div>
+				</div>
+			</div>
+
+			<div class='fastLayer' style='left: 134px;bottom: 100px;'>
+				<div alt='2'>
+					<div style='width:400px;height:300px;'>
+						<div class="slide">
+						  <div class="slices" onclick="void(0);">
+						    <div class="slice slice-1"></div>
+						    <div class="slice slice-2"></div>
+						    <div class="slice slice-3"></div>
+						    <div class="slice slice-4"></div>
+						    <div class="slice slice-5"></div>
+						    <div class="slice slice-6"></div>
+						    <div class="slice slice-7"></div>
+						    <div class="slice slice-8"></div>
+						    <div class="text">
+						      <h4 class="h4__text">
+						        Slice 
+						      </h4>
+						      <h5 class="h5__text">
+						        transition
+						      </h5>
+						    </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			</div>
+		</div>
+
+
+		<div id="more3">
 			<div class='popularResolution para-totalCenterAlign'>
 
 			<div class='fastLayer' style='left: 534px;top: 100px;'>
@@ -235,144 +286,46 @@ top: 0px;'>
 			</div>
 		</div>
 
-
-		<div id="more1">
-			<div class='popularResolution para-totalCenterAlign'>
-
-			<div class='fastLayer' style='left: 534px;top: 100px;'>
-				<div alt='2'>
-					<div style='width:400px;height:300px;'>
-						<div class="slide">
-						  <div class="slices" onclick="void(0);">
-						    <div class="slice slice-1"></div>
-						    <div class="slice slice-2"></div>
-						    <div class="slice slice-3"></div>
-						    <div class="slice slice-4"></div>
-						    <div class="slice slice-5"></div>
-						    <div class="slice slice-6"></div>
-						    <div class="slice slice-7"></div>
-						    <div class="slice slice-8"></div>
-						    <div class="text">
-						      <h4 class="h4__text">
-						        Slice 
-						      </h4>
-						      <h5 class="h5__text">
-						        transition
-						      </h5>
-						    </div>
-						  </div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class='fastLayer' style='left: 734px;top: 600px;'>
-				<div alt='2'>
-					<div style='width:400px;height:300px;'>
-						<div class="slide">
-						  <div class="slices" onclick="void(0);">
-						    <div class="slice__first slice-1"></div>
-						    <div class="slice__first slice-2"></div>
-						    <div class="slice__first slice-3"></div>
-						    <div class="slice__first slice-4"></div>
-						    <div class="slice__first slice-5"></div>
-						    <div class="slice__first slice-6"></div>
-						    <div class="slice__first slice-7"></div>
-						    <div class="slice__first slice-8"></div>
-						    <div class="text">
-						      <h4 class="h4__text">
-						        Slice 
-						      </h4>
-						      <h5 class="h5__text">
-						        transition
-						      </h5>
-						    </div>
-						  </div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class='fastLayer' style='left: 134px;bottom: 100px;'>
-				<div alt='2'>
-					<div style='width:400px;height:300px;'>
-						<div class="slide">
-						  <div class="slices" onclick="void(0);">
-						    <div class="slice slice-1"></div>
-						    <div class="slice slice-2"></div>
-						    <div class="slice slice-3"></div>
-						    <div class="slice slice-4"></div>
-						    <div class="slice slice-5"></div>
-						    <div class="slice slice-6"></div>
-						    <div class="slice slice-7"></div>
-						    <div class="slice slice-8"></div>
-						    <div class="text">
-						      <h4 class="h4__text">
-						        Slice 
-						      </h4>
-						      <h5 class="h5__text">
-						        transition
-						      </h5>
-						    </div>
-						  </div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			</div>
-		</div>
-
-		<div id="more1" class='para-totalCenterAlign'>
+		<div id="more4" class='para-totalCenterAlign'>
 			<div class='story'>
 				<div class="right">
 					<h4 class="form__title">Форма для связи</h4>
 					<form action="" class="form"> 
 						<label for="name">Ваше Имя 
-							<input type="text" class="form__name">
+							<input type="text" id="name" class="form__name">
 						</label>
 
 						<label for="mail">Ваш Email
-							<input type="text" class="form__mail">
+							<input type="text" id="mail" class="form__mail">
 						</label>
 
 						<label for="text">Ваше Сообщение</label>
 							<textarea name="text" id="text" class="form__text"></textarea>
+
+						<div class="btn-wrap">
+							<a class="glitch-btn" href="#" target="_blank">
+								<div class="glitch-btn__text">отправить</div>
+								<div class="glitch-btn__mask">
+									<span>отправить</span>
+								</div>
+							</a>
+						</div>
 					</form>
+
 				</div>
 			</div>
 
-			<div class="story">
-				<div class="left">
-					<h4 class="left__title">Контактные данные</h4>
-					<p class="left__text">
+			<div class="story__contact">
+				<div class="contacts">
+					<h4 class="contacts__title">Контактные данные</h4>
+					<p class="contacts__text">
 						Другие способы связаться со мной:
 					</p>
-					<div class="btn-wrap">
-						<a class="glitch-btn" href="https://vk.com/id161514279" target="_blank">
-						  <div class="text">вконтакте</div>
-						  <div class="mask">
-					    <span>вконтакте</span>
-					    </div>
-					 </div>
-					</a>	
-					</div>
+					<ul class="contacts__list">
+						<li class="contacts__item">
 
-					<a class="glitch-btn" href="https://github.com/CollectBrains" target="_blank">
-					  <div class="text">Git Hub</div>
-					  <div class="mask">
-					    <span>GitHub</span>
-					    </div>
-					 </div>
-					</a>
-					<a class="glitch-btn" href="skype:dima.lev12?add" target="_blank">
-					  <div class="text">Skype</div>
-					  <div class="mask">
-					    <span>Skype</span>
-					    </div>
-					 </div>
-					</a>
+						</li>
+					</ul>
 				</div>
 			</div> 
 		</div>

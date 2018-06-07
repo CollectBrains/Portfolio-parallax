@@ -75,13 +75,6 @@
 		transition: all 1s ease-in-out;
 	}
 
-	
-	.slice__first {
-		@extend .slice;
-		background: url('http://100dayscss.com/codepen/slice-image-2.jpg') center center no-repeat;
-	}
-
-
 	@for $i from 1 through 8 {
 		$nullBase: $i - 1;
 		.slice-#{$i} {

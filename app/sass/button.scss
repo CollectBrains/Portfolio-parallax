@@ -1,11 +1,12 @@
 $midGrey: #2e2e2e;
 $darkGrey: #252525;
 $green: #4e4e4e;
-$lightGrey:#00ffb4;
+$lightGrey:#dc2222;
+@import "vars";
 
 $curve: cubic-bezier(0.23, 1, 0.32, 1);
   
-$font: 'Share Tech Mono', monospace;
+$font: 	"jura", sans-serif;
 
 @mixin keyframes($animationName)
 {
@@ -45,7 +46,7 @@ $font: 'Share Tech Mono', monospace;
 .glitch-btn:hover:before {
   background: $green;
   transform: translateX(2250%) scaleX(50) scaleY(0.2);
-  
+	left: 0;
 }
 
 
@@ -144,7 +145,7 @@ $font: 'Share Tech Mono', monospace;
   }
 }
 
-.glitch-btn .mask {
+.glitch-btn .glitch-btn__mask {
   position: absolute;
   -webkit-backface-visibility: hidden;
   height: 20%;
@@ -153,7 +154,7 @@ $font: 'Share Tech Mono', monospace;
   display: none;
 }
 
-.glitch-btn .mask span {
+.glitch-btn .glitch-btn__mask span {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -162,18 +163,18 @@ $font: 'Share Tech Mono', monospace;
   top: -100%;
 }
 
-.glitch-btn .mask {
+.glitch-btn .glitch-btn__mask {
   top: 20%;
 }
 
-.glitch-btn:hover .mask {
+.glitch-btn:hover .glitch-btn__mask {
   animation: glitchin 0.2s both ;
 }
 
-.glitch-btn:hover .text {
+.glitch-btn:hover .glitch-btn__text {
   animation: fade-in 0.8s forwards;
 }
-.glitch-btn:hover .mask {
+.glitch-btn:hover .glitch-btn__mask {
   display: block;
 }
 
