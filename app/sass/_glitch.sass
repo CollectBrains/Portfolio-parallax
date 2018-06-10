@@ -1,0 +1,89 @@
+.glitch
+	font-size: 40px
+	position: relative
+	white-space: nowrap
+	margin: 0 auto
+	color: #fff
+	&::before, &::after
+		background-color: #1b1b1b
+		color: #fff
+		animation-iteration-count: infinite
+		animation-timing-function: linear
+		animation-direction: alternate-reverse
+		overflow: hidden
+		position: absolute
+		top: 0
+		clip: rect(0, 9999px, 0, 0)
+		content: attr(data-text)
+	&::before
+		left: 2px
+		text-shadow: 1px 0 #00ffea
+		animation: glitch-animation 5s infinite linear
+	&::after
+		left: 0.8px
+		text-shadow: -1px 0 #fe3a7f
+		animation: glitch-animation 4s infinite linear
+
+@keyframes glitch-animation
+	0%
+		clip: rect(14.03509px, 9999px, 19.60784px, 0)
+
+	5%
+		clip: rect(4.40044px, 9999px, 24.53988px, 0)
+
+	10%
+		clip: rect(17.24138px, 9999px, 10px, 0)
+
+	15%
+		clip: rect(16.46091px, 9999px, 32px, 0)
+
+	20%
+		clip: rect(24.09639px, 9999px, 9.61538px, 0)
+
+	25%
+		clip: rect(13.60544px, 9999px, 21.97802px, 0)
+
+	30%
+		clip: rect(34.48276px, 9999px, 28.16901px, 0)
+
+	35%
+		clip: rect(8px, 9999px, 8px, 0)
+
+	40%
+		clip: rect(1.33333px, 9999px, 1px, 0)
+
+	45%
+		clip: rect(10px, 9999px, 26.49007px, 0)
+
+	50%
+		clip: rect(22.85714px, 9999px, 39.60396px, 0)
+
+	55%
+		clip: rect(2px, 9999px, 18.43318px, 0)
+
+	60%
+		clip: rect(35.71429px, 9999px, 12.01201px, 0)
+
+	65%
+		clip: rect(21.62162px, 9999px, 10.81081px, 0)
+
+	70%
+		clip: rect(28.98551px, 9999px, 40px, 0)
+
+	75%
+		clip: rect(4px, 9999px, 3.33333px, 0)
+
+	80%
+		clip: rect(7.20721px, 9999px, 32px, 0)
+
+	85%
+		clip: rect(20px, 9999px, 22.59887px, 0)
+
+	90%
+		clip: rect(17.24138px, 9999px, 19.60784px, 0)
+
+	95%
+		clip: rect(13.20132px, 9999px, 8px, 0)
+
+	100%
+		clip: rect(4px, 9999px, 4px, 0)
