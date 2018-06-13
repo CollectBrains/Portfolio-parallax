@@ -141,7 +141,7 @@ body
 .more1__center
 	float: left
 	display: block
-	width: 350px
+	max-width: 480px
 	position: relative
 	z-index: 10
 	top: 50%
@@ -153,7 +153,9 @@ body
 .more1__text
 	display: block
 	font-size: 18px
-
+	+jura_medium
+	word-wrap: normal
+	white-space: pre-line
 .story
 	width: 320px
 	+clearfix
@@ -190,6 +192,7 @@ body
 		font-size: 30px
 		color: $tColor
 		text-decoration: underline
+		+jura_semibold
 	&__text
 		font-size: 25px
 		color: $tColor
@@ -243,6 +246,7 @@ body
 	margin-bottom: 20px
 	font-size: 25px
 	color: #fff
+	+jura_bold
 	text-transform: uppercase
 
 .btn-wrap

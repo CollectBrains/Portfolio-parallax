@@ -1,10 +1,10 @@
 /* VARS
 /* MIXINS
 /* ANIMATIONS
+@import "vars"
 @keyframes intermittente
 	75%
 		opacity: 0.7
-
 
 .btn
 	display: inline-block
@@ -36,7 +36,7 @@
 	-webkit-border-radius: 0
 	animation: intermittente 0.01s infinite alternate
 	box-shadow: 0px 0px 35px rgba(204, 0, 0, 0.3), 0 0 11px rgba(204, 0, 0, 0.3), 0 0 2px rgba(255, 0, 0, 0.3), 0 0 1px rgba(204, 0, 0, 0.3), 0 0px 17px rgba(204, 0, 0, 0.3), inset 0px 0 17px rgba(204, 0, 0, 0.3), inset 0px 0 30px rgba(204, 0, 0, 0.3)
-	font-family: 'Dosis', sans-serif
+	+jura_medium
 	position: absolute
 	width: 300px
 	top: 50%
