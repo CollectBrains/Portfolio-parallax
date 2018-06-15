@@ -1,29 +1,29 @@
 $(function() {
 
-	var $contactForm = $('#contact-form');
-	$contactForm.submit(function(e) {
-		//e.preventDefault();
-		var $self = $(this);
-		$.ajax({
-			url: '//formspree.io/your@email.com',
-			method: 'POST',
-			data: $(this).serialize(),
-			dataType: 'json',
-			success: function(data) {
-				$($self).find('.success').addClass('active').css('display', 'flex').hide().fadeIn();
-				setTimeout(function () {
-					$($self).find('.success').removeClass('active').fadeOut();
-					$self.trigger('reset');
-				}, 3000)
-				// $contactForm.find('.alert--loading').hide();
-				// $contactForm.append('<div class="alert alert--success">Message sent!</div>');
-			},
-			error: function(err) {
-				$contactForm.find('.alert--loading').hide();
-				$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
-			}
-		});
-	});
+	// var $contactForm = $('#contact-form');
+	// $contactForm.submit(function(e) {
+	// 	//e.preventDefault();
+	// 	var $self = $(this);
+	// 	$.ajax({
+	// 		url: '//formspree.io/your@email.com',
+	// 		method: 'POST',
+	// 		data: $(this).serialize(),
+	// 		dataType: 'json',
+	// 		success: function(data) {
+	// 			$($self).find('.success').addClass('active').css('display', 'flex').hide().fadeIn();
+	// 			setTimeout(function () {
+	// 				$($self).find('.success').removeClass('active').fadeOut();
+	// 				$self.trigger('reset');
+	// 			}, 3000)
+	// 			// $contactForm.find('.alert--loading').hide();
+	// 			// $contactForm.append('<div class="alert alert--success">Message sent!</div>');
+	// 		},
+	// 		error: function(err) {
+	// 			// $contactForm.find('.alert--loading').hide();
+	// 			// $contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+	// 		}
+	// 	});
+	// });
 
 	$(".hover").mouseleave(
 		function() {
